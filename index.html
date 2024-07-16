@@ -15,16 +15,17 @@
       font-weight: bolder;
       font-style: normal;
       margin:5% 5%;
-      
     }
     body{
         border: 1px solid #aaa;
-  border-radius: 4px;
+        border-radius: 4px;
+        margin: auto;
+
     }
     details {
-  border: 1px solid #aaa;
-  border-radius: 4px;
-  padding: 0.5em 0.5em 0;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        padding: 0.5em 0.5em 0;
 }
 
 summary {
@@ -50,8 +51,73 @@ a{
 iframe{
     padding: 0px ;
     margin: 0px;
-    justify-items: start;;
+    width:100%;
+    height: 600px;
+
 }
+.re{
+    /* padding: 0px; */
+    margin: 0px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) 
+        {
+            body{
+                font-size: 1.5em;
+
+            }
+            iframe{
+                height: 400px;
+            }
+        }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px)
+        {
+            body{
+            font-size: 1.7em;
+
+            }
+            iframe{
+                height: 400px;
+            }
+        }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+        {
+        body{
+            font-size: 1.8em;
+
+            }
+            iframe{
+                height: 400px;
+            }
+        }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)
+         {
+            body{
+            font-size: 2em;
+
+            }
+            iframe{
+                height: 500px;
+            }
+        }
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px)
+        {
+            body{
+            font-size: 2.5em;
+            }
+            iframe{
+                height: 600px;
+            }
+
+        }
 </style>
 <body>
     <h1>NDT-Course</h1>
@@ -59,33 +125,46 @@ iframe{
     <details name="reqs">
         <summary>VT</summary>
         <ul>
-            <li><a href="https://www.mediafire.com/folder/0oaabv4830xmv/Presentation-+VT?fbclid=IwZXh0bgNhZW0CMTAAAR0pwzUtJhWtixtoOfULs2xxo0Alj8SKaj6Apjj_Bg3qTig6dC2662PmSpM_aem_FggeLZxCFFOl1Fi3b6jZOQ">Slides</a></li>
-            <li> <p>Videos</p>
+            <li>
+                <a href="https://www.mediafire.com/folder/0oaabv4830xmv/Presentation-+VT?fbclid=IwZXh0bgNhZW0CMTAAAR0pwzUtJhWtixtoOfULs2xxo0Alj8SKaj6Apjj_Bg3qTig6dC2662PmSpM_aem_FggeLZxCFFOl1Fi3b6jZOQ">Slides
+
+                </a>
+            </li>
+            <li>
+                <p>Videos</p>
                 <ol>
                     <li>
-                    <a href="https://www.youtube.com/playlist?list=PLlzYzTFRphP82IIwW39suhGX2V6TRyEgK">Youtube</a>
+                        <a href="https://www.youtube.com/playlist?list=PLlzYzTFRphP82IIwW39suhGX2V6TRyEgK">Youtube</a>
                     </li>
                     <li>
-                        <a href="https://www.mediafire.com/folder/0i0iok9fa3ecv/VT?fbclid=IwZXh0bgNhZW0CMTAAAR1cDDjSiOuuKl1nVWhUK-LrN3czCrPuVroO4ArnM4vL8H7r598O8PU__c0_aem_usVp1Ba3ToaMTgYs9m-X_A#n89v3hph2v6hk">MediaFire</a>
-                        </li>
+                        <a href="https://www.mediafire.com/folder/0i0iok9fa3ecv/VT?fbclid=IwZXh0bgNhZW0CMTAAAR1cDDjSiOuuKl1nVWhUK-LrN3czCrPuVroO4ArnM4vL8H7r598O8PU__c0_aem_usVp1Ba3ToaMTgYs9m-X_A#n89v3hph2v6hk">
+                            MediaFire
+                        </a>
+                    </li>
                 </ol>
             </li>
             <li>
                 <a href="https://drive.google.com/file/d/1MXQaYi7wN7mWISRVtHasYs_-PyEh6pVl/view?usp=sharing">Code</a>
             </li>
             <li>
-                <a >Notes <br><span style="color:red">*under progress*</span></a>
+                <a>
+                    Notes <br><span style="color:red">*under progress*</span>
+                </a>
             </li>
         </ul>
-        <h4>Questions</h4>
-        <details name="req">
-            <summary>Level I</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982110" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        <details name="req" class="re">
+            <summary>Code</summary>
+            <iframe class="scribd_iframe_embed" title="ASME BPVC 2023 Sect IX - Patr QG" src="https://www.scribd.com/embeds/708702055/content?start_page=1&view_mode=scroll&access_key=key-d7nbkcMLe80tY9A2d23m" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7729220222793488" scrolling="no" width="auto" height="600" frameborder="0"></iframe>
         </details>
-        <details name="req">
+        <h4>Questions</h4>
+        <details name="req" class="re">
+            <summary>Level I</summary>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982110" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        </details>
+        <details name="req" class="re">
             <summary>Level II</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982188" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>        </details>
-    </details>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982188" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>        </details>
+        </details>
     </details>
 
     <details name="reqs">
@@ -101,37 +180,51 @@ iframe{
                 <a>Notes<br><span style="color:red">*under progress*</span></a>
             </li>
         </ul>
-        <h4>Questions</h4>
-        <details name="req">
-            <summary>Level I</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2978687" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        <details name="req" class="re">
+            <summary>Code</summary>
+            <iframe class="scribd_iframe_embed" title="ASME V, ARTICLE 6 - PT" src="https://www.scribd.com/embeds/620916266/content?start_page=1&view_mode=scroll&access_key=key-qAzigbTzKkilgJKjDhKl" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7080062794348508" scrolling="no" width="auto" height="600" frameborder="0"></iframe>
         </details>
-        <details name="req">
+        <h4>Questions</h4>
+        <details name="req" class="re">
+            <summary>Level I</summary>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2978687" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        </details>
+        <details name="req" class="re">
             <summary>Level II</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2979392" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2979392" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
         </details>
     </details>
     <details name="reqs">
         <summary>MT</summary>
         <ul>
             <li>
-                <a href="https://www.mediafire.com/file/ujs9ssi1yavv634/Magnetic_Particles_MT_Book.pdf/file?fbclid=IwZXh0bgNhZW0CMTAAAR0H_rG_UPfZNiWekF43bqKKBkwOOyTgkt9CqFrQ2VWMm1u4XFa06QMBq_Q_aem_zIO0e7GpumgazhMEo-CWhg">Slides</a>
+                <a href="https://www.mediafire.com/file/ujs9ssi1yavv634/Magnetic_Particles_MT_Book.pdf/file?fbclid=IwZXh0bgNhZW0CMTAAAR0H_rG_UPfZNiWekF43bqKKBkwOOyTgkt9CqFrQ2VWMm1u4XFa06QMBq_Q_aem_zIO0e7GpumgazhMEo-CWhg">
+                    Slides
+                </a>
             </li>
             <li>
-                <a href="https://www.youtube.com/playlist?list=PLlzYzTFRphP82P0xun0Tsb-oMlQVNOfmB">Videos</a>
+                <a href="https://www.youtube.com/playlist?list=PLlzYzTFRphP82P0xun0Tsb-oMlQVNOfmB">
+                    Videos
+                </a>
             </li>
             <li>
-                <a>Notes<br><span style="color:red">*under progress*</span></a>
+                <a>
+                    Notes<br><span style="color:red">*under progress*</span>
+                </a>
             </li>
         </ul>
-        <h4>Questions</h4>
-        <details name="req">
-            <summary>Level I</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981630" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        <details name="req" class="re">
+            <summary>Code</summary>
+            <iframe class="scribd_iframe_embed" title="ASME V, ARTICLE 6 - PT" src="https://www.scribd.com/embeds/620916266/content?start_page=1&view_mode=scroll&access_key=key-qAzigbTzKkilgJKjDhKl" tabindex="0" data-auto-height="false" data-aspect-ratio="0.7080062794348508" scrolling="no" width="auto" height="600" frameborder="0"></iframe>
         </details>
-        <details name="req">
+        <h4>Questions</h4>
+        <details name="req" class="re">
+            <summary>Level I</summary>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981630" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        </details>
+        <details name="req" class="re">
             <summary>Level II</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981781" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981781" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
         </details>
     </details>
     
@@ -143,13 +236,13 @@ iframe{
             <li><a href="#">Notes</a></li>
         </ul> -->
     <hh4>Questions</hh4>
-    <!-- <details name="req">
+    <!-- <details name="req" class="re">
         <summary>Level I</summary>
-        <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981781" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981781" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
     </details>
-    <details name="req">
+    <details name="req" class="re">
         <summary>Level II</summary>
-        <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981781" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2981781" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
     </details> -->
     </details>
 
@@ -161,16 +254,15 @@ iframe{
             <li><a href="#">Notes</a></li> -->
         </ul>
         <h4>Questions</h4>
-        <details name="req">
+        <details name="req" class="re">
             <summary>Level I</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982401" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
-        </details>
-        <details name="req">
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982401" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+        </details class="re">
+        <details name="req" class="re">
             <summary>Level II</summary>
-            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982342" width="200" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
+            <iframe class="studyStackFlashcardIframe" src="https://www.studystack.com/iflashcardnew-2982342" width="auto" height="400" frameborder="0" scrolling="no" style="overflow:hidden"></iframe>
         </details>
     </details>
     <div><a href="https://www.mediafire.com/file/ymhzm19dxxx4wf1/Piping_Training_Course.pdf/file?fbclid=IwZXh0bgNhZW0CMTAAAR3CM3x6okJFF-KXO10vugQ7ewbXNCDy5pOoFFdC-t6uWDP8v2gYXJobdmc_aem_FJgWYcBO7fzLwzQONxMuhg" style="border:1px solid;border-radius:2px;padding: 5px;">PIPING</a></div>
-
 </body>
 </html>
